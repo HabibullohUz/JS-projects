@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    * {
+      border-left-color: rgb(0, 255, 259);
+      border-top-color: rgb(0, 255, 255);
+      border-right-color: rgb(0, 255, 230);
+      border-bottom-color: rgb(0, 255, 210);
+      background-color: #fff;
+    }
+    body {
+      text-align: center;
+      outline: none;
+      padding-bottom: 200px;
+    }
+    span {
+      padding: 0 4px;
+      border-radius: 2px;
+      border: 1px solid grey;
+    }
+    select {
+      padding: 2px 6px;
+      text-align: center;
+      border-radius: 2px;
+      -webkit-appearance: none;
+    }
+  </style>
+  <head>
+    <meta charset="UTF-8" /
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <!-- <script defer src="./calculator.js"></script> -->
+    <script defer src="./calculator-shortCode.js"></script>
+    <!-- <script defer src="./with_switch-case.js"></script> -->
+  </head>
+  <body>
+    <div class="container">
+      <h1>new code </h1>
+      <input type="number" id="birinchiSon" />
+
+      <select name="ishora" id="ishora">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+      </select>
+
+      <input type="number" id="ikkinchiSon" />
+      <button id="result">=</button>
+      <span id="resultNum">0</span>
+    </div>
+  </body>
+</html>
