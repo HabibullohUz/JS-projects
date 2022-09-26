@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css"
+    integrity="sha512-HHsOC+h3najWR7OKiGZtfhFIEzg5VRIPde0kB0bG2QRidTQqf+sbfcxCTB16AcFB93xMjnBIKE29/MjdzXE+qw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/fontawesome.css"
+    integrity="sha512-hksROWRSWPuYnv0z5vhyUwobZ49ZBxzhsCdXhwFy9ZDFFMS2UOg1DgCKphTlWkibm7p3Fp6Vq6GffbNDd+tOgg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link href="http://fonts.cdnfonts.com/css/google-sans" rel="stylesheet" />
+
+  <title>NBU clone</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+
+
+  <script src="https://kit.fontawesome.com/d7281531c0.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div class="container">
+    <!-- header -->
+    <div class="header-wrapper">
+      <div class="header">
+        <!-- log -->
+        <div class="logo-container">
+          <img class="logo1" src="./assets/logo.svg" alt="logo" />
+          <img class="logo2" src="./assets/logo-independence-uz.svg" alt="logo-independence-uz" />
+        </div>
+        <!-- log  end-->
+
+        <!-- navbar -->
+        <div class="nav-bar">
+          <div class="nav-top">
+            <ul class="nav-top__link">
+              <li><a href="#">Jismoniy shaxslar</a></li>
+              <li><a href="#">Kichik biznes</a></li>
+              <li><a href="#">Korporativ mijozlar</a></li>
+              <li><a href="#">Aksiyadorlar va Investorlar</a></li>
+              <li><a href="#">Bank haqida</a></li>
+
+              <div class="glasses">
+                <a href="#" class="switcher"><img src="https://nbu.uz/local/templates/nbu/img/glasses.svg"
+                    alt="#" /></a>
+              </div>
+            </ul>
+            <ul class="currency">
+              <li>
+                <div class="valyuta-name">USD</div>
+              </li>
+              <li>
+                <a href="">Sotib olish <br /><span>10400.00 <img src="" alt="" /></span></a>
+              </li>
+              <li>
+                <a href="">Sotish <br /><span>10400.00 <img src="" alt="" /></span></a>
+              </li>
+              <li>Valyuta kurslari</li>
+            </ul>
+          </div>
+
+          <!-- line -->
+          <div class="line"></div>
+          <!-- line end-->
+
+          <div class="nav-bottom">
+            <ul>
+              <li><a href="">Kreditlar</a></li>
+              <li><a href="">Kartalar</a></li>
+              <li><a href="">Omonatlar</a></li>
+              <li><a href="">Pul o'tkazmalar</a></li>
+              <li><a href="">Tariflar</a></li>
+              <li><a href="">Aksiyalar</a></li>
+            </ul>
+
+            <div class="bottom-right">
+              <div class="header-phone">
+                <i class="fa-sharp fa-solid fa-mobile-screen-button"></i>
+                <a href="" class="header__num-new">1344</a>
+                <img class="header-nav" src="https://img.icons8.com/material-rounded/24/1A1A1A/expand-arrow--v1.png" />
+                <div class="phone-dropdown">
+                  <a href="tel:+998781480010" class="header_phone">+998 78 148 00 10</a>
+                  <span>Aloqa markazi: </span>
+                  <br />
+                  Ish vaqti soat 9:00 dan 21:00 gacha
+                  <br />
+                </div>
+              </div>
+              <div>
+                <div class="lang">
+                  <ul>
+                    <li>
+                      <i class="fa-solid fa-globe"></i>
+                      <a href=""> O'zbekcha</a>
+                      <!-- <ul class="lang_dropdown">
+                        <li><a href="">O'zbekcha</a></li>
+                        <li><a href="">Русский</a></li>
+                        <li><a href="">English</a></li>
+                      </ul> -->
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="my-bank">
+                <ul>
+                  <li>
+                    <a href="">
+                      <span><i class="fa-solid fa-user"></i></span>
+                      Mening bankim
+                    </a>
+                    <ul>
+                      <ul class="mybankDrop">
+                        <li class="mybankDrop--title">Mening bankim</li>
+                        <li>
+                          <a href="https://ibank.nbu.uz/login" target="_blank">IBANK</a>
+                        </li>
+                        <li>
+                          <a href="https://pk.nbu.uz/" target="_blank">Shaxsiy kabinet</a>
+                        </li>
+                        <li>
+                          <a href="https://cards.nbu.com" target="_blank">VISA kabineti</a>
+                        </li>
+                        <li>
+                          <a href="https://milliy.nbu.uz" target="_blank">Milliy Web</a>
+                        </li>
+                      </ul>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="bodySearch">
+                <span class="searchicon">
+                  <i class="fa-sharp fa-solid fa-magnifying-glass"></i>Search
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- navbar  end-->
+      </div>
+    </div>
+    <!-- header end-->
+
+    <div class="wrapper">
+      <div class="inner__wrapper">
+        <div class="exchange__rates">
+          <div class="container__main">
+            <h1 class="exchange__rates-title">Valyutalar kursi</h1>
+
+            <div class="currency__tabs">
+              <a href="#" class="currency__tab ">Valyuta ayirboshlash punktlarida</a>
+              <a href="#" class="currency__tab">Bankomatlarda</a>
+              <a href="#" class="currency__tab">Dam olish kunlari uchun jadval</a>
+            </div>
+            <div class="currency__tab-line"></div>
+            <div class="row b_currency ">
+              <div class="main__exchange">
+                <div class="currency_block">
+                  <div class="">
+                    <div class="exch_table">
+                      <div class="kursdata">
+                        <table>
+                          <tbody>
+                            <tr class="kursdata__line">
+                              <th data-th="Valyutaning nomi">
+                                <span class="bt-content">Valyutaning nomi</span>
+                              </th>
+                              <th data-th="Sotib olish">
+                                <span class="bt-content">Sotib olish</span>
+                              </th>
+                              <th data-th="Sotish">
+                                <span class="bt-content">Sotish</span>
+                              </th>
+                              <th data-th="MB">
+                                <span class="bt-content">MB</span>
+                              </th>
+                            </tr>
+                            <!-- line -->
+                            <div class="kursdata__line"></div>
+                            <!-- line -->
+                            <tr>
+                              <td data-th="Valyutaning nomi">
+                                <span class="bt-content"><img src="" alt="" />1 AQSh dollari , USD
+                                </span>
+                              </td>
+                              <td data-th="Sotib olish">
+                                <span class="bt-content">10950.00</span>
+                              </td>
+                              <td data-th="Sotish">
+                                <span class="bt-content">11005.00</span>
+                              </td>
+                              <td data-th="MB">
+                                <span class="bt-content">10940.05</span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td data-th="Valyutaning nomi">
+                                <span class="bt-content"><img src="" alt="" />1 Yevro , EUR
+                                </span>
+                              </td>
+                              <td data-th="Sotib olish">
+                                <span class="bt-content">10300.00</span>
+                              </td>
+                              <td data-th="Sotish">
+                                <span class="bt-content">11400.00</span>
+                              </td>
+                              <td data-th="MB">
+                                <span class="bt-content">11121.65</span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td data-th="Valyutaning nomi">
+                                <span class="bt-content"><img src="" alt="" />1 Rossiya rubli , RUB
+                                </span>
+                              </td>
+                              <td data-th="Sotib olish">
+                                <span class="bt-content">145.00</span>
+                              </td>
+                              <td data-th="Sotish">
+                                <span class="bt-content">195.00</span>
+                              </td>
+                              <td data-th="MB">
+                                <span class="bt-content">182.26</span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td data-th="Valyutaning nomi">
+                                <span class="bt-content"><img src="" alt="" />1 Angliya funt sterlingi , GBP
+                                </span>
+                              </td>
+                              <td data-th="Sotib olish">
+                                <span class="bt-content">12300.00</span>
+                              </td>
+                              <td data-th="Sotish">
+                                <span class="bt-content">13300.00</span>
+                              </td>
+                              <td data-th="MB">
+                                <span class="bt-content">12809.70</span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td data-th="Valyutaning nomi">
+                                <span class="bt-content"><img src="" alt="" />1 Shveytsariya franki , CHF
+                                </span>
+                              </td>
+                              <td data-th="Sotib olish">
+                                <span class="bt-content">10700.00</span>
+                              </td>
+                              <td data-th="Sotish">
+                                <span class="bt-content">11900.00</span>
+                              </td>
+                              <td data-th="MB">
+                                <span class="bt-content">11512.21</span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td data-th="Valyutaning nomi">
+                                <span class="bt-content"><img src="" alt="" />1 Yaponiya iyenasi , JPY
+                                </span>
+                              </td>
+                              <td data-th="Sotib olish">
+                                <span class="bt-content">70.00</span>
+                              </td>
+                              <td data-th="Sotish">
+                                <span class="bt-content">95.00</span>
+                              </td>
+                              <td data-th="MB">
+                                <span class="bt-content">76.92</span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td data-th="Valyutaning nomi">
+                                <span class="bt-content"><img src"" alt="" />1 Qozog‘iston tengesi , KZT
+                                </span>
+                              </td>
+                              <td data-th="Sotib olish">
+                                <span class="bt-content">10.00</span>
+                              </td>
+                              <td data-th="Sotish">
+                                <span class="bt-content">25.00</span>
+                              </td>
+                              <td data-th="MB">
+                                <span class="bt-content">23.10</span>
+                              </td>
+                            </tr>
+                            <tr class="hideother">
+                            <tr>
+                              <td colspan="4" data-th="Valyutaning nomi">
+                                <span class="bt-content">
+                                  <div class="hide_no_need">
+                                    <p data-hidetext="Boshqa kurslarni yopish"
+                                      data-showtext="Bankga xizmat ko'rsatadigan boshqa filiallar"
+                                      class="showMoreCurrency " onclick="showMore()">
+                                      Bankga xizmat ko'rsatadigan boshqa
+                                      filiallar
+                                    </p>
+                                    <img class="header-nav" src="" />
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <table class="hideother__container">
+                              <tr style="display: block">
+                                <td data-th="Valyutaning nomi">
+                                  <span class="bt-content"><img src="" alt="" />1 Avstraliya dollari , AUD
+                                  </span>
+                                </td>
+                                <td class="bt-hide"></td>
+                                <td class="bt-hide"></td>
+                                <td data-th="MB">
+                                  <span class="bt-content">7551.92</span>
+                                </td>
+                              </tr>
+                              <tr class="tr__border-bottom">
+                                <td data-th="Valyutaning nomi">
+                                  <span class="bt-content"><img src="" alt="" />1 Kanada dollari , CAD
+                                  </span>
+                                </td>
+                                <td class="bt-hide"></td>
+                                <td class="bt-hide"></td>
+                                <td data-th="MB">
+                                  <span class="bt-content">8434.24</span>
+                                </td>
+                              </tr>
+                              <tr class="tr__border-bottom">
+                                <td data-th="Valyutaning nomi">
+                                  <span class="bt-content"><img src="" alt="" />1 Xitoy yuani , CNY
+                                  </span>
+                                </td>
+                                <td class="bt-hide"></td>
+                                <td class="bt-hide"></td>
+                                <td data-th="MB">
+                                  <span class="bt-content">1578.08</span>
+                                </td>
+                              </tr>
+                              <tr class="tr__border-bottom">
+                                <td data-th="Valyutaning nomi">
+                                  <span class="bt-content"><img src="" alt="" />1 Daniya kronasi , DKK
+                                  </span>
+                                </td>
+                                <td class="bt-hide"></td>
+                                <td class="bt-hide"></td>
+                                <td data-th="MB">
+                                  <span class="bt-content">1495.4</span>
+                                </td>
+                              </tr>
+                              <tr class="tr__border-bottom">
+                                <td data-th="Valyutaning nomi">
+                                  <span class="bt-content"><img src="" alt="" />1 Misr funti , EGP
+                                  </span>
+                                </td>
+                                <td class="bt-hide"></td>
+                                <td class="bt-hide"></td>
+                                <td data-th="MB">
+                                  <span class="bt-content">564.94</span>
+                                </td>
+                              </tr>
+                              <tr class="tr__border-bottom">
+                                <td data-th="Valyutaning nomi">
+                                  <span class="bt-content"><img src="" alt="" />1 Islandiya kronasi , ISK
+                                  </span>
+                                </td>
+                                <td class="bt-hide"></td>
+                                <td class="bt-hide"></td>
+                                <td data-th="MB">
+                                  <span class="bt-content">79.38</span>
+                                </td>
+                              </tr>
+                              <tr class="tr__border-bottom">
+                                <td data-th="Valyutaning nomi">
+                                  <span class="bt-content"><img src="" alt="" />1 Koreya respublikasi voni , KRW
+                                  </span>
+                                </td>
+                                <td class="bt-hide"></td>
+                                <td class="bt-hide"></td>
+                                <td data-th="MB">
+                                  <span class="bt-content">7.95</span>
+                                </td>
+                              </tr>
+                              <tr class="tr__border-bottom">
+                                <td data-th="Valyutaning nomi">
+                                  <span class="bt-content"><img src="" alt="" />1 Quvayt dinori , KWD
+                                  </span>
+                                </td>
+                                <td class="bt-hide"></td>
+                                <td class="bt-hide"></td>
+                                <td data-th="MB">
+                                  <span class="bt-content">35519.64</span>
+                                </td>
+                              </tr>
+                              <tr class="tr__border-bottom">
+                                <td data-th="Valyutaning nomi">
+                                  <span class="bt-content"><img src="" alt="" />1 Livan funti , LBP
+                                  </span>
+                                </td>
+                                <td class="bt-hide"></td>
+                                <td class="bt-hide"></td>
+                                <td data-th="MB">
+                                  <span class="bt-content">7.24</span>
+                                </td>
+                              </tr>
+                              <tr class="tr__border-bottom">
+                                <td data-th="Valyutaning nomi">
+                                  <span class="bt-content"><img src="" alt="" />1 Malayziya ringgiti , MYR
+                                  </span>
+                                </td>
+                                <td class="bt-hide"></td>
+                                <td class="bt-hide"></td>
+                                <td data-th="MB">
+                                  <span class="bt-content">2426.81</span>
+                                </td>
+                              </tr>
+                              <tr class="tr__border-bottom">
+                                <td data-th="Valyutaning nomi">
+                                  <span class="bt-content"><img src="" alt="" />1 Norvegiya kronasi , NOK
+                                  </span>
+                                </td>
+                                <td class="bt-hide"></td>
+                                <td class="bt-hide"></td>
+                                <td data-th="MB">
+                                  <span class="bt-content">1112.62</span>
+                                </td>
+                              </tr>
+                              <tr class="tr__border-bottom">
+                                <td data-th="Valyutaning nomi">
+                                  <span class="bt-content"><img src="" alt="" />1 Polsha zlotiysi , PLN
+                                  </span>
+                                </td>
+                                <td class="bt-hide"></td>
+                                <td class="bt-hide"></td>
+                                <td data-th="MB">
+                                  <span class="bt-content">2360.47</span>
+                                </td>
+                              </tr>
+                              <tr class="tr__border-bottom">
+                                <td data-th="Valyutaning nomi">
+                                  <span class="bt-content"><img src="" alt="" />1 Shvetsiya kronasi , SEK
+                                  </span>
+                                </td>
+                                <td class="bt-hide"></td>
+                                <td class="bt-hide"></td>
+                                <td data-th="MB">
+                                  <span class="bt-content">1048.51</span>
+                                </td>
+                              </tr>
+                              <tr class="tr__border-bottom">
+                                <td data-th="Valyutaning nomi">
+                                  <span class="bt-content"><img src="" alt="" />1 Singapur dollari , SGD
+                                  </span>
+                                </td>
+                                <td class="bt-hide"></td>
+                                <td class="bt-hide"></td>
+                                <td data-th="MB">
+                                  <span class="bt-content">7845.14</span>
+                                </td>
+                              </tr>
+                              <tr class="tr__border-bottom">
+                                <td data-th="Valyutaning nomi">
+                                  <span class="bt-content"><img src="" alt="" />1 Turkiya lirasi , TRY
+                                  </span>
+                                </td>
+                                <td class="bt-hide"></td>
+                                <td class="bt-hide"></td>
+                                <td data-th="MB">
+                                  <span class="bt-content">599.67</span>
+                                </td>
+                              </tr>
+                              <tr class="tr__border-bottom">
+                                <td data-th="Valyutaning nomi">
+                                  <span class="bt-content"><img src="" alt="" />1 Ukraina grivnasi , UAH
+                                  </span>
+                                </td>
+                                <td class="bt-hide"></td>
+                                <td class="bt-hide"></td>
+                                <td data-th="MB">
+                                  <span class="bt-content">296.22</span>
+                                </td>
+                              </tr>
+                            </table>
+                            </tr>
+                            <!-- /hideother__container -->
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="exch_quote">
+                      <p>
+                        O'zbekiston Respublikasi Markaziy banki valyuta
+                        operatsiyalari bo'yicha hisob-kitob, statistik va
+                        <br />
+                        boshqa hisobotlarni, shuningdek bojxona va boshqa
+                        majburiy to'lovlarni hisoblab chiqarish <br />
+                        uchun quyidagi xorijiy valyuta kurslarini belgilaydi.
+                        Narxlar O'zbekiston Respublikasi Markaziy <br />
+                        bankining ushbu miqdorda valyutani sotib olish yoki
+                        sotish majburiyatisiz belgilanadi.
+                      </p>
+                      <a href="" target="_blank">Valyuta kurslari json formatda</a>
+                    </div>
+                    <br />
+                    <br />
+                    <a href="" download="" class="ex-link" style="
+                          display: inline-block;
+                          color: #009ea7;
+                          text-decoration: underline;
+                          margin-bottom: 30px;
+                        ">Dam olish kunlari faoliyat yurutuvchi valyuta
+                      ayirboshlash shaxobchalari</a>
+                  </div>
+                </div>
+              </div>
+              <div class="sidebar">
+                <div class="convert">
+                  <h3 class="sidebar_head">Valyuta <br> konvertori</h3>
+                  <div class="coverter">
+                    <input id="ratecalc" type="number" class="ratecalc" value="" placeholder="1" autocomplete="off" />
+                    <select class="rate2 select2-hidden-accessible" data-select2-id="1" tabindex="-1"
+                      aria-hidden="true">
+                      <option value="10940.05" data-select2-id="3">
+                        USD
+                      </option>
+                      <option value="11121.65">EUR</option>
+                      <option value="182.26">RUB</option>
+                      <option value="12809.70">GBP</option>
+                      <option value="11512.21">CHF</option>
+                      <option value="76.92">JPY</option>
+                      <option value="23.10">KZT</option>
+                      <option value="7551.92">AUD</option>
+                      <option value="8434.24">CAD</option>
+                      <option value="1578.08">CNY</option>
+                      <option value="1495.4">DKK</option>
+                      <option value="564.94">EGP</option>
+                      <option value="79.38">ISK</option>
+                      <option value="7.95">KRW</option>
+                      <option value="35519.64">KWD</option>
+                      <option value="7.24">LBP</option>
+                      <option value="2426.81">MYR</option>
+                      <option value="1112.62">NOK</option>
+                      <option value="2360.47">PLN</option>
+                      <option value="1048.51">SEK</option>
+                      <option value="7845.14">SGD</option>
+                      <option value="599.67">TRY</option>
+                      <option value="296.22">UAH</option>
+                    </select>
+                  </div>
+                  <div class="coverter uzs">
+
+                    <input type="text" class="rateval" id="rateval" value="" placeholder="10980.00" disabled=""
+                      autocomplete="off" />
+                    <select class="rate1 select2-hidden-accessible" data-select2-id="4" tabindex="-1"
+                      aria-hidden="true">
+                      <option value="" disabled="" selected="" data-select2-id="6">
+                        UZS
+                      </option>
+                    </select>
+                  </div>
+                </div>
+                <div class="convert calendar" data-select2-id="260">
+                  <h3 class="sidebar_head">Valyuta <br> kurslari arxiv</h3>
+                  <div class="month_year" data-select2-id="259">
+                    <div id="datepicker" class="hasDatepicker" data-select2-id="datepicker">
+                      <div>
+
+                        <select class="calendar-select month">
+                          <div class="ui-datepicker-title" data-select2-id="256">
+                            data-event="change" data-select2-id="247" tabindex="-1" aria-hidden="true">
+                            <option value="0" data-select2-id="279">
+                              Январь
+                            </option>
+                            <option value="1" data-select2-id="280">
+                              Февраль
+                            </option>
+                            <option value="2" data-select2-id="281">
+                              Март
+                            </option>
+                            <option value="3" data-select2-id="282">
+                              Апрель
+                            </option>
+                            <option value="4" data-select2-id="283">
+                              Май
+                            </option>
+                            <option value="5" data-select2-id="284">
+                              Июнь
+                            </option>
+                            <option value="6" data-select2-id="285">
+                              Июль
+                            </option>
+                            <option value="7" data-select2-id="286">
+                              Август
+                            </option>
+                            <option value="8" selected="selected" data-select2-id="249">
+                              Сентябрь
+                            </option>
+                        </select>
+                        <select class="calendar-select year">
+                          <option value="2012" data-select2-id="268">
+                            2012
+                          </option>
+                          <option value="2013" data-select2-id="269">
+                            2013
+                          </option>
+                          <option value="2014" data-select2-id="270">
+                            2014
+                          </option>
+                          <option value="2015" data-select2-id="271">
+                            2015
+                          </option>
+                          <option value="2016" data-select2-id="272">
+                            2016
+                          </option>
+                          <option value="2017" data-select2-id="273">
+                            2017
+                          </option>
+                          <option value="2018" data-select2-id="274">
+                            2018
+                          </option>
+                          <option value="2019" data-select2-id="275">
+                            2019
+                          </option>
+                          <option value="2020" data-select2-id="276">
+                            2020
+                          </option>
+                          <option value="2021" data-select2-id="277">
+                            2021
+                          </option>
+                          <option value="2022" selected="selected" data-select2-id="252">
+                            2022
+                          </option>
+                        </select>
+                      </div>
+                    </div>
+                    <table class="calendar-week active">
+                      <thead>
+                        <tr>
+                          <th scope="col">
+                            Пн
+                          </th>
+                          <th scope="col">
+                            <span title="вторник">Вт</span>
+                          </th>
+                          <th scope="col">
+                            <span title="среда">Ср</span>
+                          </th>
+                          <th scope="col">
+                            <span title="четверг">Чт</span>
+                          </th>
+                          <th scope="col">
+                            <span title="пятница">Пт</span>
+                          </th>
+                          <th scope="col" class="ui-datepicker-week-end">
+                            <span title="суббота">Сб</span>
+                          </th>
+                          <th scope="col" class="ui-datepicker-week-end">
+                            <span title="воскресенье">Вс</span>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">
+                            &nbsp;
+                          </td>
+                          <td class="ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">
+                            &nbsp;
+                          </td>
+                          <td class="ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">
+                            &nbsp;
+                          </td>
+                          <td>
+                            <a href="#">1</a>
+                          </td>
+                          <td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2022">
+                            <a class="ui-state-default" href="#">2</a>
+                          </td>
+                          <td class="ui-datepicker-week-end" data-handler="selectDay" data-event="click" data-month="8"
+                            data-year="2022">
+                            <a class="ui-state-default" href="#">3</a>
+                          </td>
+                          <td class="ui-datepicker-week-end" data-handler="selectDay" data-event="click" data-month="8"
+                            data-year="2022">
+                            <a class="ui-state-default" href="#">4</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2022">
+                            <a class="ui-state-default" href="#">5</a>
+                          </td>
+                          <td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2022">
+                            <a class="ui-state-default" href="#">6</a>
+                          </td>
+                          <td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2022">
+                            <a class="ui-state-default" href="#">7</a>
+                          </td>
+                          <td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2022">
+                            <a class="ui-state-default" href="#">8</a>
+                          </td>
+                          <td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2022">
+                            <a class="ui-state-default" href="#">9</a>
+                          </td>
+                          <td class="ui-datepicker-week-end" data-handler="selectDay" data-event="click" data-month="8"
+                            data-year="2022">
+                            <a class="ui-state-default" href="#">10</a>
+                          </td>
+                          <td class="ui-datepicker-week-end" data-handler="selectDay" data-event="click" data-month="8"
+                            data-year="2022">
+                            <a class="ui-state-default" href="#">11</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2022">
+                            <a class="ui-state-default" href="#">12</a>
+                          </td>
+                          <td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2022">
+                            <a class="ui-state-default" href="#">13</a>
+                          </td>
+                          <td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2022">
+                            <a class="ui-state-default" href="#">14</a>
+                          </td>
+                          <td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2022">
+                            <a class="ui-state-default" href="#">15</a>
+                          </td>
+                          <td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2022">
+                            <a class="ui-state-default" href="#">16</a>
+                          </td>
+                          <td class="ui-datepicker-week-end" data-handler="selectDay" data-event="click" data-month="8"
+                            data-year="2022">
+                            <a class="ui-state-default" href="#">17</a>
+                          </td>
+                          <td class="ui-datepicker-week-end" data-handler="selectDay" data-event="click" data-month="8"
+                            data-year="2022">
+                            <a class="ui-state-default" href="#">18</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2022">
+                            <a class="ui-state-default" href="#">19</a>
+                          </td>
+                          <td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2022">
+                            <a class="ui-state-default" href="#">20</a>
+                          </td>
+                          <td class="ui-datepicker-today" data-handler="selectDay" data-event="click" data-month="8"
+                            data-year="2022">
+                            <a href="">21</a>
+                          </td>
+                          <td class="ui-datepicker-unselectable ui-state-disabled">
+                            <span class="ui-state-default"><a href="">22</a></span>
+                          </td>
+                          <td class="ui-datepicker-unselectable ui-state-disabled">
+                            <span class="ui-state-default"><a href="">23</a> </span>
+                          </td>
+                          <td class="ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled">
+                            <span class="ui-state-default">24</span>
+                          </td>
+                          <td class="ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled">
+                            <span class="ui-state-default">25</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="ui-datepicker-unselectable ui-state-disabled">
+                            <span class="ui-state-default">26</span>
+                          </td>
+                          <td class="ui-datepicker-unselectable ui-state-disabled">
+                            <span class="ui-state-default">27</span>
+                          </td>
+                          <td class="ui-datepicker-unselectable ui-state-disabled">
+                            <span class="ui-state-default">28</span>
+                          </td>
+                          <td class="ui-datepicker-unselectable ui-state-disabled">
+                            <span class="ui-state-default">29</span>
+                          </td>
+                          <td class="ui-datepicker-unselectable ui-state-disabled">
+                            <span class="ui-state-default">30</span>
+                          </td>
+                          <td
+                            class="ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">
+                            &nbsp;
+                          </td>
+                          <td
+                            class="ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">
+                            &nbsp;
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="dynamic_exchange"><a href="/exchange-rates/diagramma/" class="dynamic_exchange-link">Valyuta
+                    kurslari dinamikasi</a>
+                  </div>
+
+              </div>
+              <div class="contact_us cardscontact">
+                <div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-md-6 contact_part">
+				<div class="border_block">
+					<h3>Dolzarb ma’lumotli<br>tеlеgram-kanal</h3>
+					<p>
+						Bank faoliyati haqidagi so‘nggi yangiliklardan xabardor bo‘ling
+					</p>
+ <a href="https://t.me/nbu_official" target="_blank">Kanalga o`tish</a>
+			  	</div>
+			</div>
+			<div class="col-xs-12 col-md-6 contact_part">
+				<div class="part_wraps">
+					<div class="border_block uzor_block">
+						<a href="https://nbu.uz/milliy/" class="uzor_block--promo" target="_blank"></a>
+						<h3>Milliy <br> ilovasini <br> yuklab oling</h3>
+						<ul>
+							<li class="appstore"><a href="http://itunes.apple.com/uz/app/milliy/id1297283006?mt=8" target="_blank">AppStore da</a></li>
+							<li class="googlestore"><a href="https://play.google.com/store/apps/details?id=com.tune.milliy" target="_blank">Google Play da</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /First row -->
+
+        <div class="row b_currency"></div>
+        <!-- /Second row -->
+
+        <div class="row b_currency"></div>
+        <!-- /Thirty row -->
+
+        <!-- end currency -->
+      </div>
+    </div>
+  </div>
+  <!--end inner__wrapper-->
+  <div class="bread__crumbs"></div>
+  <!--end bread__crumbs-->
+  <div class="contacts"></div>
+  <!--end contacts-->
+  </div>
+  <!--end Wrap-->
+  </div>
+
+
+</body>
+
+</html>

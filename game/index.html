@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>Game</h2>
+        <p>Tosh qaychini yutadi</p>
+        <p>Qaychi qog'ozni yutadi</p>
+        <p>Qog'oz toshni yutadi</p>
+      </div>
+
+      <div class="form-container">
+
+        <label for="ism" id="outputName">Ismingizni kiriting</label><br>
+        
+
+        <label for="tosh">Tosh</label>
+        <input type="radio" id="tosh" name="tanlash" value="tosh" />
+
+        <label for="qaychi">Qaychi</label>
+        <input type="radio" id="qaychi" name="tanlash" value="qaychi" />
+
+        <label for="qogoz">Qogoz</label>
+        <input type="radio" id="qogoz" name="tanlash" value="qogoz" /><br>
+
+        <button onclick="innerHtmlName()">GO</button>
+      </div>
+    </div>
+  </body>
+</html>

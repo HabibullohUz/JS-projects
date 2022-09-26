@@ -1,0 +1,407 @@
+@import url("http://fonts.cdnfonts.com/css/google-sans");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "GoogleSans";
+}
+
+.container i {
+  width: 20px;
+}
+
+body {
+  font-family: "GoogleSans";
+}
+
+.container {
+  width: 100%;
+}
+
+.header-wrapper {
+  width: 100%;
+  height: 200px;
+  padding: 0 75px;
+  background-color: #fff;
+}
+
+.header {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding: 0 15px;
+  background-color: antiquewhite;
+}
+
+.logo-container {
+  width: 78px;
+  display: block;
+  background-color: aqua;
+}
+
+.logo2 {
+  display: none;
+}
+
+.nav-bar {
+  background-color: aqua;
+}
+
+.nav-top {
+  display: flex;
+  align-items: center;
+}
+
+.nav-top ul {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding-bottom: 23px;
+  background-color: rgb(255, 203, 135);
+}
+
+.nav-top__link {
+  text-transform: uppercase;
+}
+
+.nav-top ul li {
+  list-style: none;
+}
+
+.nav-top ul li a {
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+
+  color: #848e9f;
+}
+
+/* .glasses{
+
+} */
+
+.glasses {
+  width: 30px;
+  height: 10px;
+  margin: 0 150px 0 50px;
+}
+
+.currency {
+  display: flex;
+  align-items: center;
+}
+
+.currency a {
+  text-align: center;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: #e6eaf1;
+}
+
+.nav-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(219, 219, 219, 0.819);
+}
+
+.nav-bottom ul {
+  display: flex;
+  align-items: center;
+}
+
+.nav-bottom ul li {
+  list-style: none;
+  padding: 25px 10px 25px;
+}
+
+.nav-bottom ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 500;
+  font-family: sans-serif;
+  color: black;
+}
+
+.nav-bottom ul li:first-child {
+  padding-left: 0;
+}
+
+.bottom-right {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin: 13px 0;
+  background-color: yellow;
+  font-size: 18px;
+}
+
+.header-phone {
+  max-width: 122px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  overflow: hidden;
+  border-radius: 6px;
+  border: 2px solid #e4bd63;
+  padding: 10px 14px;
+}
+
+.header-phone a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 300;
+  padding: 0 8px;
+}
+
+.header-iphone {
+  width: 26px;
+}
+
+.phone-dropdown {
+  display: none;
+  position: absolute;
+  width: 260px;
+  background-color: #fff;
+  border-radius: 12px;
+  color: #000;
+  border: 1px solid #e6eaf1;
+  font-size: 14px;
+  transition: 0.5s ease 15ms;
+}
+
+.lang a {
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+.lang_dropdown {
+  display: none;
+}
+
+.mybankDrop {
+  display: none !important;
+}
+/* end header */
+
+.wrapper {
+  width: 100%;
+  background-color: #f8f8f8;
+}
+
+.inner__wrapper {
+  padding: 50px 0 0;
+  background-color: #848e9f;
+}
+
+.container__main {
+  margin: 0 120px;
+  padding: 0 15px;
+  background-color: aqua;
+}
+
+.exchange__rates-title {
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.currency__tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  font-size: 24px;
+  padding: 0 101px;
+  background-color: aqua;
+}
+
+.currency__tabs a {
+  text-decoration: none;
+  color: #000;
+}
+
+.currency__tab-line {
+  height: 1px;
+  background-color: #e6eaf1;
+  margin: 18px 0 24px;
+  padding: 0 15px;
+}
+
+.kursdata__line {
+  width: 100%;
+  border-bottom: 1px solid#0a3475;
+}
+
+.b_currency .kursdata__line th {
+  width: 100%;
+  border-bottom: 2px solid#0a3475;
+}
+
+.b_currency {
+  width: 100%;
+
+  display: flex !important;
+  background-color: #045bf0;
+}
+
+.main__exchange {
+  padding: 0 10px;
+}
+
+.exch_table table tr th {
+  text-transform: uppercase;
+  color: #09347c;
+  font-weight: normal;
+  padding-bottom: 25px;
+}
+
+.currency_block {
+  font-size: 15px;
+  background-color: #e4bd63;
+}
+
+.exch_table table tr td,
+.inner_wrapper .exch_table table tr td {
+  padding: 20px 25px;
+  font-size: 15px;
+  border-bottom: 1px solid #e0e4eb;
+  font-weight: 500;
+  text-align: left;
+  width: 100%;
+}
+
+.hideother__container {
+  display: none;
+}
+
+.hide_no_need {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.exch_quote {
+  margin-top: 40px;
+}
+
+.exch_quote p {
+  line-height: 1.35;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.exch_quote a {
+  text-decoration: none;
+  color: #093475;
+  font-size: 18px;
+}
+
+.ex-link {
+  color: #009ea7;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.convert {
+  border-radius: 6px;
+  border: 1px solid #e6eaf1;
+  padding: 30px 30px;
+  margin: 0 0 10px 25px;
+  background: #fff;
+}
+
+.sidebar_head {
+  color: rgb(0, 0, 0);
+  font-size: 34px;
+  margin-bottom: 30px;
+  width: 340px;
+  height: 100px;
+  background-color: red;
+
+  background: url(https://nbu.uz/local/templates/nbu/img/cours.svg) no-repeat
+    right;
+}
+
+select {
+  font-size: 16px;
+  padding: 8px 8px;
+  margin-bottom: 10px;
+  border: 1px solid #e5eaf1;
+  border-radius: 4px;
+}
+
+/*selectni iconini oladi */
+.rate1 {
+  -webkit-appearance: none;
+}
+
+input {
+  width: 76%;
+  padding: 8px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  border: 1px solid #e5eaf1;
+}
+
+.calendar-select {
+  width: 100%;
+  padding: 15px;
+  appearance: web;
+}
+
+.calendar-week {
+  width: 100%;
+}
+
+.calendar-week th {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #093475;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.calendar-week td {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.calendar-week td a {
+  font-size: 18px;
+  text-decoration: none;
+  padding: 6px 8px;
+
+  color: #999999;
+}
+
+.calendar-week td a:hover {
+  border-radius: 50%;
+  color: #fff;
+  background-color: #009ea7;
+}
+
+.calendar-week td span {
+  color: #dbdbdb;
+}
+
+.dynamic_exchange {
+  text-align: center;
+}
+
+.dynamic_exchange a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #093475;
+  line-height: 1.556;
+}

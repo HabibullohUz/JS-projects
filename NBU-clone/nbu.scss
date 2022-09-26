@@ -1,0 +1,167 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Product Sans", sans-serif;
+}
+
+@import url("http://fonts.cdnfonts.com/css/google-sans");
+
+// $fonts: 'Poppins', Helvetica, sans-serif;
+// $primary-color: #ab99ca;
+// $spacing: 2rem;
+// $dark-grey: #999;
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin hover-text {
+  color: #009ea7;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #f8f8f8;
+
+  .header {
+    width: 100%;
+    height: 140px;
+    padding: 0 86px;
+
+    background-color: #fff;
+
+    .nav-wrapper {
+      @include flex-center;
+      gap: 32px;
+      height: 100%;
+
+      .logo-container {
+        width: 76px;
+      }
+
+      .nav {
+        width: 100%;
+
+        .nav-style {
+          ul {
+            display: flex;
+            gap: 36px;
+          }
+
+          ul li {
+            list-style: none;
+          }
+
+          ul li a {
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 11px;
+            line-height: 1.5;
+            color: #848e9f;
+            transition: 0.2s;
+            padding-bottom: 5px;
+            position: relative;
+          }
+
+          .nav-top__hover:after {
+            content: "";
+            position: absolute;
+            background-color: #009ea7;
+            height: 2px;
+            left: 50%;
+            width: 0;
+            transform: translate(-50%);
+            bottom: -10px;
+            transition: 0.3s;
+          }
+          .nav-top__hover:hover::after {
+            width: 100%;
+            color: #fff;
+          }
+        }
+
+        .nav-top {
+          width: 100%;
+          height: 42px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          .currency-container {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+
+            .hover-text {
+              a {
+                text-decoration: none;
+                color: black;
+                transition: 0.3s;
+                font-size: 14px;
+                line-height: 14px;
+                font-family: "Product Sans light", sans-serif;
+
+                &:hover {
+                  @include hover-text;
+                }
+              }
+            }
+          }
+        }
+
+        .line {
+          margin-bottom: 25px;
+          height: 2px;
+          background-color: #e6eaf1;
+        }
+        .nav-bottom {
+          display: flex;
+
+          .nav-bottom_item {
+            font-size: 18px;
+            line-height: 18px;
+            color: black;
+            text-transform: capitalize;
+            transition: 0.3s;
+
+            &:hover {
+              @include hover-text;
+            }
+          }
+        }
+      }
+    }
+  }
+  .kreditlar-menu {
+    width: 100%;
+    height: 340px;
+    padding: 50px 60px 0;
+
+    transition: all 0.3s linear;
+
+    ul li {
+      list-style: none;
+    }
+
+    a {
+      text-decoration: none;
+      font-size: 11px;
+      transition: 0.2s;
+    }
+
+    .kreditlar-menu__info {
+      max-width: 220px;
+      font-size: 18px;
+      line-height: 27px;
+      background-color: #009ea7;
+    }
+  }
+  .show {
+    display: none;
+    display: flex;
+    background-color: red;
+  }
+}
