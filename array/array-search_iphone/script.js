@@ -87,8 +87,6 @@ function deleteFunc(index) {
     apples(copy)
 }
 
-
-
 search.addEventListener('input', (e) => {
     e.preventDefault()
     let newCopy = [...appleProducts]
