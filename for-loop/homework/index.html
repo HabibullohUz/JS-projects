@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="task__numbers">
+        <h2 class="task" >1</h2>
+        <h2 class="task">2</h2>
+        <h2 class="task">3</h2>
+      </div>
+      <div class="tasks">
+        <div class="task_1 task">
+          <h2>
+            Berilgan ikki sonning orasidagi sonlar yig’indisini aniqlab
+            qaytaruvchi funksiya tuzing.
+          </h2>
+          <div class="form">
+            <input type="number" id="input_x" class="input_x" />
+            <span>+</span>
+            <input type="number" id="input_y" class="input_y" />
+            <button onclick="addFunc()">=</button>
+            <span class="result"></span>
+          </div>
+        </div>
+
+        <div class="task_2 task">
+          <h2>
+            Math kutubxonasi tomonidan taqdim qilingan pow(x, y) funksiyasini
+            o’zingiz tuzing.Ma’lumki, pow(x, y) funksiyasi x ni y darajasiga
+            chiqarib natijani qaytaradi.
+          </h2>
+          <div class="form">
+            <input type="number" id="inputX" class="inputX" />
+            <input type="number" id="inputY" class="inputY" />
+            <button onclick="powFunc()">=</button>
+            <span class="output"></span>
+          </div>
+        </div>
+
+        <div class="task_3 task">
+          <h2>1 dan 100 gacham bo'lgan tub sonlari ekranga chiqarish</h2>
+          <div class="form">
+            <button id="btn" class="btn" onclick="showPrimes()">Click me ✌️</button>
+          </div>
+          <div class="result_box"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
