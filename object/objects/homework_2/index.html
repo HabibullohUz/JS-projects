@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>object</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/svg-with-js.min.css"
+      integrity="sha512-j+8sk90CyNqD7zkw9+AwhRuZdEJRLFBUg10GkELVu+EJqpBv4u60cshAYNOidHRgyaKNKhz+7xgwodircCS01g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script defer src="./index.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <form id="form" class="form">
+        <h1 class="title">Game</h1>
+        <p class="correct"><i class="fa-solid fa-circle-check correct"></i></p>
+        <p class="wrong"><i class="fa-solid fa-circle-xmark wrong"></i></p>
+        <input id="input" class="input classAll" type="number" />
+        <div class="resultDiv classAll">
+          <span class="span__right"></span>
+          <span class="span__left"></span>
+        </div>
+        <button disabled class="btn classAll" id="btn" onclick="findNum() ">
+          Find
+        </button>
+      </form>
+    </div>
+  </body>
+</html>

@@ -22,8 +22,7 @@
 .task__numbers h2 {
   padding: 4px 10px;
   border-radius: 50%;
-  transition: .3s ease;
-
+  transition: 0.3s ease;
 }
 
 .task__numbers h2:hover {
@@ -73,9 +72,17 @@
 }
 
 .task_3 {
-text-align: center;
+  text-align: center;
 }
 
-.result_box{
-margin-top: 10px;
+.result_box {
+  margin-top: 10px;
+}
+
+.task_content {
+  display: none;
+}
+
+.task_content.active {
+  display: block;
 }

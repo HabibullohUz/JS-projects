@@ -99,5 +99,5 @@
 // console.log(newArr) // tartiblangan holati
 
 //* remember
-//yangi arrni ozgartirmaydi = map() sort() find()  concat() slice()
 //yangi arrni ozgartiradi = pop() push() unshift() shift() splice() sort()
+//yangi arrni ozgartirmaydi = map() sort() find()  concat() slice()

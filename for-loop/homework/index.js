@@ -49,14 +49,18 @@ function showPrimes() {
         }
         if (notPrime === false) {
             console.log(counter);
-            result_box.innerHTML += counter
+            result_box.innerHTML += (`${counter} `)
         }
     }
 }
 
 
-
-// function showTask() {
-//     const task = document.querySelector('.task')
-
-// }
+const task_content = document.querySelectorAll('task_content')
+task_content.forEach(task => {
+    task.addEventListener('click', function () {
+        task_content.forEach(btn => {
+            btn.classList.add('active')
+            this.classList.remove('active')
+        })
+    })
+})
