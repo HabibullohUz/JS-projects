@@ -37,7 +37,7 @@ const helpFunc = () => {
         wrong.style.display = 'none'
         correct.style.display = 'none'
         container.style.border = '4px solid yellow'
-        resultDiv.innerHTML = 'please enter a number between 0 and 10 🙄'
+        resultDiv.innerHTML = 'e🙄'
     } else if (+input.value > num) {
         resultDiv.innerHTML = "Big 👻";
     } else if (+input.value < num) {

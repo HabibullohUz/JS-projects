@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Homework</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      defer
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      defer
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navigation">
+        <div class="menuToggle">
+          <ion-icon name="add-outline"></ion-icon>
+          <i></i>
+        </div>
+        <div class="menu">
+          <ul>
+            <li style="--i: 0.1s">
+              <a href="#" onclick="changePage(1)"
+                ><ion-icon name="home-outline"></ion-icon
+              ></a>
+            </li>
+            <li style="--i: 0.2s">
+              <a href="#" onclick="changePage(2)"
+                ><ion-icon name="person-outline"></ion-icon
+              ></a>
+            </li>
+            <li style="--i: 0.1s"></li>
+            <li style="--i: 0.2s">
+              <a href="#" onclick="changePage(3)"
+                ><ion-icon name="heart-outline"></ion-icon
+              ></a>
+            </li>
+            <li style="--i: 0.1s">
+              <a href="#" onclick="changePage(4)"
+                ><ion-icon name="notifications-outline"></ion-icon
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="line"></div>
+    <h1 class="title">HOMEWORK EVENTS</h1>
+
+    <main class="main-section mini-conatainer">
+      <!-- section first -->
+      <div class="section__first display-page">
+        <div class="boxRandomcolor"></div>
+      </div>
+
+      <!-- section second -->
+      <div class="section__second display-page">
+        <div class="changedBox"></div>
+      </div>
+
+      <!-- section round -->
+      <div class="section__round display-page">
+        <form>
+          <input
+            onkeydown="changeSize()"
+            id="width__input"
+            type="text"
+            placeholder="width"
+          />
+          <input
+            onkeydown="changeSize()"
+            id="height__input"
+            type="text"
+            placeholder="height"
+          />
+        </form>
+
+        <div class="img__wrapper">
+          <img id="img" src="https://picsum.photos/500/300?random=1" alt="" />
+          <img id="img" src="https://picsum.photos/500/300?random=2" alt="" />
+          <img id="img" src="https://picsum.photos/500/300?random=3" alt="" />
+          <img id="img" src="https://picsum.photos/500/300?random=4" alt="" />
+        </div>
+      </div>
+
+      <!-- section fourth -->
+      <div class="section__fourth display-page">
+        <input id="inputNum" type="text" placeholder="if(v > 100) => v = 100" />
+      </div>
+    </main>
+  </body>
+</html>

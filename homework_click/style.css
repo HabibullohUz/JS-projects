@@ -1,0 +1,231 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr: #20415c;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--clr);
+}
+
+.navigation {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menuToggle {
+  position: relative;
+  width: 65px;
+  height: 65px;
+  background-color: #00bad7;
+  border: 5px solid var(--clr);
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  transform: translateY(-30px);
+}
+
+.menuToggle ion-icon {
+  font-size: 3em;
+  color: var(--clr);
+  transition: 1.5s;
+}
+
+.menuToggle.active ion-icon {
+  transform: rotate(225deg);
+}
+
+.menuToggle i {
+  position: absolute;
+  inset: 0;
+}
+
+.menuToggle i::before {
+  content: "";
+  position: absolute;
+  top: 22px;
+  left: -23px;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border-top-right-radius: 20px;
+  box-shadow: 3px -6px var(--clr);
+}
+
+.menuToggle i::after {
+  content: "";
+  position: absolute;
+  top: 22px;
+  right: -23px;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border-top-left-radius: 20px;
+  box-shadow: -3px -6px var(--clr);
+}
+
+.menu {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: #fff;
+  border-radius: 70px;
+  transform: translateY(-30px);
+  transition: transform 0.5s, width 0.5s, height 0.5s;
+  transition-delay: 1s, 0.5s, 0.5s;
+}
+
+.menuToggle.active ~ .menu {
+  width: 360px;
+  height: 70px;
+  transform: translateY(0px);
+  transition-delay: 0s, 0.5s, 0.5s;
+}
+
+.menu ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  line-height: 80px;
+}
+
+.menu ul li {
+  list-style: none;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.25s;
+  transition-delay: calc(0s + var(--i));
+  transform: translateY(-30px);
+}
+.menuToggle.active ~ .menu ul li {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: calc(0.75s + var(--i));
+  transform: translateY(0px);
+}
+.menu ul li:nth-child(3) {
+  width: 30px;
+}
+
+.menu ul li a {
+  display: block;
+  font-size: 2em;
+  text-decoration: none;
+  color: var(--clr);
+}
+
+.menu ul li:hover a {
+  color: #00bad7;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding: 40px;
+}
+
+.display-page {
+  display: none;
+}
+
+.active-page {
+  display: block;
+}
+
+.mini-conatainer {
+  min-height: calc(100vh - 148px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 30px;
+}
+
+.boxRandomcolor {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  transition: 0.8s;
+  background-color: #ffffff;
+}
+
+.changedBox {
+  width: 300px;
+  height: 300px;
+  transition: 0.8s;
+  background-color: #ffffff;
+}
+
+form {
+  position: absolute;
+  top: 220px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+form input {
+  padding: 4px 8px;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  font-family: cursive;
+}
+
+.img__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 120px;
+}
+
+.img__wrapper img {
+  border-radius: 8px;
+}
+
+.p:hover {
+  transform: rotate(225deg);
+}
+
+#inputNum {
+  height: 40px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: none;
+  position: absolute;
+  top: 260px;
+  left: 50%;
+  transform: translate(-50%);
+  outline: none;
+}
+
+.line {
+  width: 360px;
+  height: 3px;
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  transform: translate(-50%);
+
+  background-color: #fff;
+}
+.title {
+  position: absolute;
+  top: 160px;
+  left: 50%;
+  color: #fff;
+  font-family: sans-serif;
+  transform: translate(-50%);
+}
