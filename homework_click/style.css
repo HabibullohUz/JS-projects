@@ -217,6 +217,7 @@ form input {
   position: absolute;
   top: 150px;
   left: 50%;
+  border-radius: 2px;
   transform: translate(-50%);
 
   background-color: #fff;
