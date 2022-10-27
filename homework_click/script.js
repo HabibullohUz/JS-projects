@@ -32,8 +32,8 @@ changedBox.addEventListener('mouseout', () => {
 
 
 /* --------------------------------------------------------------------------------------------------------- */
-/* 3. Image hosil qiling. 2ta Input hosil qiling. Input yoqilib
-bo'lgandan keyin (btn bosilmasdan) ushbu imagening width va heighti ozgarsin */
+//  3. Image hosil qiling. 2ta Input hosil qiling. Input yoqilib
+// bo'lgandan keyin (btn bosilmasdan) ushbu imagening width va heighti ozgarsin */
 /* --------------------------------------------------------------------------------------------------------- */
 const width__input = document.querySelector('#width__input')
 const height__input = document.querySelector('#height__input')
@@ -62,8 +62,39 @@ inputNum.addEventListener('input', () => {
     }
 })
 
+
+/*  5. Qidirilgan so'zni sariq rangga bo'yash */
+const searchInput = document.getElementById('search__input')
+const p = document.querySelector('.text')
+
+p_value = p.textContent // get "p" tag values
+console.log(p_value)
+
+searchInput.addEventListener('keydown', () => {
+    if (searchInput.value !== '') {
+        let regExp = new RegExp(searchInput.value, 'gi')
+        p.innerHTML = p.textContent.replace(regExp, "<mark>$&</mark>")
+    }
+})
+
+
+/* ----------------------------------------------------------------------------------------- */
+//  6. Berilgan matnni har bir so'zining ilk harfini katta harfga o'zgartirib qaytaruvchi function tuzing */
+/* ----------------------------------------------------------------------------------------- */
+const myText = `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+ipsum minima, ratione libero molestias quibusdam ?`
+const upperCase = myText.split(" ")
+
+for (let i = 0; i < upperCase.length; i++) {
+    upperCase[i] = upperCase[i][0].toUpperCase() + upperCase[i].substring(1)
+}
+const outbut = document.querySelector('.box')
+
+outbut.innerHTML = upperCase
+
+
 /* --------------------------------------------------------------------------------------------------------- */
-/* Har bir navigationni aylanib chiqadigan function */
+//  Har bir navigationni aylanib chiqadigan function */
 /* --------------------------------------------------------------------------------------------------------- */
 const main = document.querySelector(".main-section");
 const menuToggle = document.querySelector('.menuToggle')
@@ -73,7 +104,7 @@ menuToggle.onclick = function () {
 }
 
 function changePage(e) {
-    [1, 1, 1, 1].map((el, index) => {
+    [1, 1, 1, 1, 1, 1].map((el, index) => {
         if (index + 1 == e) {
             console.log(e);
             main.children[index].classList.add("active-page");
@@ -82,6 +113,7 @@ function changePage(e) {
         }
     })
 }
+
 
 /* --------------------------------------------------------------------------------------------------------- */
 //Random color hover title
@@ -94,7 +126,9 @@ title.addEventListener('mousemove', () => {
     let green = Math.floor(Math.random() * 256)
     let blue = Math.floor(Math.random() * 256)
 
-    let bgColor = "rgb(" + red + "," + green + "," + blue + ")"
+    // let bgColor = "rgb(" + red + "," + green + "," + blue + ")" // 1-usul
+    let bgColor = `rgb( ${red} ${green} ${blue})` // 2-usul easy
+
     console.log(bgColor)
 
     title.style.color = bgColor

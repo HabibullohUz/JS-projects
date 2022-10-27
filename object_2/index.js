@@ -16,3 +16,4 @@ function getKeyByValue(obj, value) {
 }
 
 getKeyByValue(market, 1);
+
