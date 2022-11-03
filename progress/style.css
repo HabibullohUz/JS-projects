@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border;
+}
+
+body {
+  padding: 20pxw;
+}
+.container {
+  width: 400px;
+  height: 15px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 7px;
+  background-color: rgb(176, 127, 255);
+}
+
+.container .progress-bar {
+  position: absolute;
+  height: 100%;
+  background-color: rgb(125, 44, 255);
+}
+
+#play-animation {
+  animation: progress-animation 5s forwards;
+}
+
+@keyframes progress-animation {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
