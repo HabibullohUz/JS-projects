@@ -27,13 +27,29 @@
     <script defer src="./script.js"></script>
   </head>
   <body>
+
+    <div class="askDiv">
+      <span>will u del?</span>
+      <div class="btn_wrapper">
+        <button id="askCancel" class="activeAskBtn">cancel</button>
+        <button id="askDelete" class="activeAskBtn">delete</button>
+      </div>
+    </div>
+
     <div class="form-container">
       <form action="" class="form">
         <div class="light">
           <input class="input" type="search" id="search" placeholder="search" />
-          <button class="button" id="btn" onclick="remove_first_occurrence()">
-            <i class="fa-brands fa-apple"></i>
-           </button>
+          <button class="button" id="btn">
+            <i class="fa-brands fa-apple apple-icon"></i>
+          </button>
+        </div>
+        <div class="filter-condition">
+          <select name="" id="select">
+            <option value="default">Default</option>
+            <option value="az">a-z</option>
+            <option value="za">z-a</option>
+          </select>
         </div>
       </form>
       <div class="results-container">

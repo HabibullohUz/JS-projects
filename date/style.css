@@ -1,0 +1,64 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.ota {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.ota .bola {
+  background-color: rgb(108, 108, 196);
+  width: 20%;
+  height: 55vh;
+  border-radius: 10px;
+  padding: 20px;
+}
+.ota .bola img {
+  width: 100%;
+}
+.ota .bola h3 {
+  font-size: 30px;
+  color: white;
+  font-weight: bolder;
+}
+.ota .bola h5 {
+  padding: 8px 0;
+  color: white;
+  font-size: 20px;
+}
+.ota .bola button {
+  height: 5vh;
+  border-radius: 5px;
+  font-size: 20px;
+} /*# sourceMappingURL=style.css.map */
+
+h3 {
+  font-family: "Courier New", Courier, monospace;
+  border-bottom: 0.5px solid black;
+  width: 50%;
+}
+
+.bola {
+  position: relative;
+}
+
+.sana {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: grey;
+  font-size: 4px;
+}
+
+.boxx {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background-color: red;
+  border: none;
+  border-radius: 50%;
+}

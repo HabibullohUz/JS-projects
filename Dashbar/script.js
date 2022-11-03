@@ -72,7 +72,7 @@ console.log(p_value)
 
 searchInput.addEventListener('keydown', () => {
     if (searchInput.value !== '') {
-        let regExp = new RegExp(searchInput.value, 'gi')
+        let regExp = new RegExp(searchInput.value, 'gi') //regex expression
         p.innerHTML = p.textContent.replace(regExp, "<mark>$&</mark>")
     }
 })
@@ -88,9 +88,9 @@ const upperCase = myText.split(" ")
 for (let i = 0; i < upperCase.length; i++) {
     upperCase[i] = upperCase[i][0].toUpperCase() + upperCase[i].substring(1)
 }
-const outbut = document.querySelector('.box')
+const output = document.querySelector('.box')
 
-outbut.innerHTML = upperCase
+output.innerHTML = upperCase
 
 
 /* --------------------------------------------------------------------------------------------------------- */

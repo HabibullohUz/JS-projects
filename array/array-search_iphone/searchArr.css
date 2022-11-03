@@ -16,7 +16,8 @@ body {
 
 .form {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
+  align-items: center;
   margin-bottom: 18px;
   min-height: 40px;
 }
@@ -87,11 +88,36 @@ body {
   object-fit: cover;
 }
 
-/* focus bolganda shadow ozgaradi */
-/* input[type="search"]:focus {
-  box-shadow: 0 0 8px 0 rgb(255, 255, 255);
-} */
+.askDiv {
+  width: 300px;
+  min-height: 60px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+background-color: darkolivegreen;
+  border-radius: 6px;
+  text-align: center;
+  display: none;
+}
 
-/* .button:focus {
+.askDiv  span{
+  margin-bottom: 20px;
+}
+
+.btn_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+/* focus bolganda shadow ozgaradi
+input[type="search"]:focus {
+  box-shadow: 0 0 8px 0 rgb(255, 255, 255);
+}
+
+.button:focus {
   box-shadow: 0 0 8px 0 rgb(255, 255, 255);
 } */
