@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product view</title>
     <link rel="stylesheet" href="apple.css" />
+    <!-- boxicon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- End boxicon -->
   </head>
   <body>
     <div class="dashboard_container">
@@ -23,13 +29,20 @@
       </div>
       <!--End Navbar -->
 
-      <!-- Content_frame -->
-      <div class="content_frame">
-        <div class="item_card">
+      <!-- Product view -->
+      <div class="product_view">
+        <div class="product__view-backBtn">
+          <i class="bx bx-chevron-left"></i>
+          <button class="btn__back">Back</button>
+        </div>
 
+        <div class="product__view-infos">
+          <div class="product__view-info">helo</div>
+          <div class="product_view-description">dada</div>
         </div>
       </div>
-      <!--End content_frame -->
+
+      <!--End Product view -->
 
       <!-- bag_area -->
       <div class="bag_area">
@@ -37,14 +50,22 @@
 
         <h1>Bag</h1>
         <div class="bag_items">
-          <div class="bag_item"><img src="./assets/bag-assets/computer.png" alt="" /></div>
-          <div class="bag_item"><img src="./assets/bag-assets/iphone13.png" alt="" /></div>
-          <div class="bag_item"><img src="./assets/bag-assets/iphone11.png" alt="" /></div>
-          <div class="bag_item"><img src="./assets/bag-assets/iphone11black.png" alt="" /></div>
+          <div class="bag_item">
+            <img src="./assets/bag-assets/computer.png" alt="" />
+          </div>
+          <div class="bag_item">
+            <img src="./assets/bag-assets/iphone13.png" alt="" />
+          </div>
+          <div class="bag_item">
+            <img src="./assets/bag-assets/iphone11.png" alt="" />
+          </div>
+          <div class="bag_item">
+            <img src="./assets/bag-assets/iphone11black.png" alt="" />
+          </div>
         </div>
         <div class="view_bag">
-            <img src="./assets/bag-white.svg" alt="">
-            <a href="">View Bag</a>
+          <img src="./assets/bag-white.svg" alt="" />
+          <a href="">View Bag</a>
         </div>
       </div>
     </div>
