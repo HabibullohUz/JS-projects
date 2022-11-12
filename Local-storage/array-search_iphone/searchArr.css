@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("https://wallpaperaccess.com/full/473140.jpg");
+  background-size: cover;
+  object-fit: cover;
+}
+
+.form-container {
+  padding: 50px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 18px;
+  min-height: 40px;
+}
+
+.light {
+  display: flex;
+  border-radius: 18px;
+  box-shadow: 0 0 8px 0 rgb(255, 255, 255);
+}
+
+.light:hover {
+  box-shadow: 0 0 8px 0 rgb(255, 255, 255);
+}
+
+.input {
+  opacity: 0.8;
+  padding: 12px;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  color: #fff;
+  background-color: transparent;
+}
+
+.button {
+  height: 100%;
+  border: none;
+
+  padding: 4px 8px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  color: #fff;
+  background-color: transparent;
+  padding: 12px;
+}
+
+.button::after {
+  background-image: url("https://www.svgrepo.com/download/52286/apple.svg") !important;
+}
+
+.cards {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) !important;
+  gap: 20px;
+}
+
+.cart {
+  max-width: 264px !important;
+  padding: 0 !important;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 16px 0 rgb(0, 0, 0, 0.2);
+  color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.375);
+}
+
+.cart:hover {
+  box-shadow: 0 0 8px 0 rgb(255, 255, 255);
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.cart img {
+  height: 210px;
+  object-fit: cover;
+}
+
+.askDiv {
+  width: 300px;
+  min-height: 60px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+background-color: darkolivegreen;
+  border-radius: 6px;
+  text-align: center;
+  display: none;
+}
+
+.askDiv  span{
+  margin-bottom: 20px;
+}
+
+.btn_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+/* focus bolganda shadow ozgaradi
+input[type="search"]:focus {
+  box-shadow: 0 0 8px 0 rgb(255, 255, 255);
+}
+
+.button:focus {
+  box-shadow: 0 0 8px 0 rgb(255, 255, 255);
+} */

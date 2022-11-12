@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+img {
+  width: 100%;
+}
+
+.ota {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.ota .bola {
+  background-color: rgb(108, 108, 196);
+  width: 40%;
+  height: 55vh;
+  border-radius: 10px;
+  padding: 20px;
+}
+.ota .bola img {
+  width: 100%;
+}
+.ota .bola h3 {
+  font-size: 30px;
+  color: white;
+  font-weight: bolder;
+}
+.ota .bola h5 {
+  padding: 8px 0;
+  color: white;
+  font-size: 20px;
+}
+.ota .bola button {
+  height: 5vh;
+  border-radius: 5px;
+  font-size: 20px;
+} /*# sourceMappingURL=style.css.map */
+
+h3 {
+  font-family: "Courier New", Courier, monospace;
+  border-bottom: 0.5px solid black;
+  width: 50%;
+}
